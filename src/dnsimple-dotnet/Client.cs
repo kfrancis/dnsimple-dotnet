@@ -13,6 +13,7 @@ namespace dnsimple_dotnet
 
         public Accounts Accounts { get; private set; }
         public string AccessToken { get; set; }
+        public string UserAgent { get; set; }
 
         public Client(RefitSettings settings = null) : this(new HttpEndpointAdapter(BaseUrl, settings))
         {
